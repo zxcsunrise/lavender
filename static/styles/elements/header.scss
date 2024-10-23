@@ -6,6 +6,11 @@
     justify-content: center;
     transition: top 0.3s;
     background-color: $bg-primary-dark;
+    &.transparent {
+        background-color: transparent;
+        justify-content: start;
+        padding-left: 32px;
+    }
     .container {
         display: flex;
         justify-content: space-between;
