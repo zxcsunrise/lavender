@@ -1,0 +1,39 @@
+.about-section {
+    background-color: $bg-secondary-light;
+    .about-block {
+        .container {
+            gap: 24px;
+            .text-block {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .title {
+                    @include heading_3;
+                    text-transform: none;
+                    color: $bg-primary-dark;
+                }
+            }
+            .text {
+                @include subtitle_2;
+                color: $text-secondary-light;
+                @media screen and (max-width: 480px) {
+                    grid-column: span 2;
+                  }
+            }
+            .btn-block {
+                grid-column: span 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                .title {
+                    text-align: center;
+                    @include heading_2;
+                    text-transform: none;
+                }
+            }
+          
+        }
+    }
+}

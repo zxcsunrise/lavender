@@ -1,0 +1,60 @@
+$text-primary-dark: #F4F4F5;
+$text-tertiary-dark: #A1A1AA;
+$text-secondary-light: #27272A;
+$bg-primary-dark: #18181B;
+$bg-secondary-dark: #27272A;
+$bg-secondary-light: #E4E4E7;
+$text-blue-light: #1E3A8A;
+
+
+@mixin heading_1 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 120%;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+}
+@mixin heading_2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 120%;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+}
+@mixin heading_3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+}
+@mixin subtitle {
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 32px;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+}
+@mixin subtitle_2 {
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+}
+@mixin button() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: fit-content;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.description-section {
+    background-color: $bg-secondary-light;
+    .description-block {
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title {
+                @include heading_3;
+                font-weight: bold;
+                text-align: center;
+            }
+            .desc {
+                @include subtitle_2;
+                display: -webkit-box;
+                display: block;
+                -webkit-line-clamp: 4; /* Количество строк, которое нужно показать */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                max-height: 55px; 
+                &.expanded {
+                    -webkit-line-clamp: unset;
+                    max-height: none; 
+                }
+            }
+            .toggle-btn {
+                color: $text-secondary-light;
+                border: none;
+                padding: 5px;
+                @include subtitle_2;
+                cursor: pointer;
+                color: $text-blue-light;
+                opacity: .7;
+                transition: all .3s ease;
+                justify-content: center;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
