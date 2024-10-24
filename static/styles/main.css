@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.p-24 {
+  padding: 24px;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -64,6 +68,7 @@ time, mark, audio, video {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #E4E4E7;
 }
 
 html {
@@ -314,6 +319,17 @@ table {
   font-size: 16px;
   font-weight: 500;
   color: #B3B3B3;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  top: 20px;
+  max-width: 280px;
+  height: 80%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -15px 15px 30px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section {
@@ -629,6 +645,134 @@ table {
   .error-block .text .desc {
     font-size: 16px;
   }
+}
+
+.banner-section {
+  margin-left: 316px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.banner-section .bannder-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.banner-section .bannder-block .top {
+  width: 100%;
+  border-radius: 8px;
+}
+.banner-section .bannder-block .top img {
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0;
+}
+.banner-section .bannder-block .down {
+  background-color: #F4F4F5;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+}
+.banner-section .bannder-block .down .avatar {
+  position: absolute;
+  top: 25%;
+  left: 2%;
+}
+.banner-section .bannder-block .down .data {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  margin-left: 270px;
+}
+.banner-section .bannder-block .down .data .name {
+  font-weight: 400;
+  line-height: 120%;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .banner-section .bannder-block .down .data .name {
+    font-size: 14px;
+  }
+}
+
+.profile-main-section {
+  margin-left: 316px;
+}
+.profile-main-section .profile-main-block .container-profile {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  font-size: 14px;
+}
+.profile-main-section .profile-main-block .container-profile .bio {
+  background-color: #fff;
+  grid-column: span 1;
+  border-radius: 8px;
+}
+.profile-main-section .profile-main-block .container-profile .bio .bio-title {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(149, 159, 163, 0.3215686275);
+  font-size: 16px;
+  font-weight: 600;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .desc .title {
+  font-weight: 600;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .desc .text {
+  color: #959FA3;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .bio-data {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .bio-data .item {
+  color: #191B1C;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .bio-data .item.gray {
+  color: #959FA3;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .social-media .title {
+  font-weight: 600;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .social-media .icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-main-section .profile-main-block .container-profile .bio .about .social-media .icons a {
+  text-decoration: none;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.profile-main-section .profile-main-block .container-profile .info {
+  background-color: #fff;
+  grid-column: span 1;
+  border-radius: 8px;
+}
+.profile-main-section .profile-main-block .container-profile .info .bio-title {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(149, 159, 163, 0.3215686275);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.banner-section {
+    margin-left: 316px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    .bannder-block {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .top {
+            width: 100%;
+            border-radius: 8px;
+            img {
+                max-height: 200px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px 8px 0px 0;
+            }
+        }
+        .down {
+            background-color: #F4F4F5;
+            width: 100%;
+            border-radius: 0px 0px 8px 8px;
+            .avatar {
+                position: absolute;
+                top: 25%;
+                left: 2%;
+            }
+            .data {
+                margin-top: 24px;
+                margin-bottom: 36px;
+                margin-left: 270px;
+                .name {
+                    @include subtitle_2;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

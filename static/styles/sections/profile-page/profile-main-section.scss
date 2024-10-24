@@ -1,0 +1,83 @@
+.profile-main-section {
+    margin-left: 316px;
+    .profile-main-block {
+        .container-profile {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));;
+
+            gap: 24px;
+            font-size: 14px;
+            .bio {
+                background-color: #fff;
+                grid-column: span 1;
+                border-radius: 8px;
+               .bio-title {
+                padding: 16px 24px;
+                border-bottom: 1px solid #959fa352;
+                font-size: 16px;
+                font-weight: 600;
+               }
+               .about {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                padding: 24px;
+                .desc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    .title {
+                        font-weight: 600;
+                    }
+                    .text {
+                        color: #959FA3;
+                    }
+                }
+                .bio-data {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 12px;
+                    .item {
+                        color: #191B1C;
+                        &.gray {
+                            color: #959FA3;
+                        }
+                    }
+                }
+                .social-media {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .title {
+                        font-weight: 600;
+                    }
+                    .icons{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                 
+                }
+               }
+            }
+            .last-activity {
+                grid-column: span 3;
+                grid-row: span 2;
+            }
+            .info {
+                background-color: #fff;
+                grid-column: span 1;
+                border-radius: 8px;
+                .bio-title {
+                    padding: 16px 24px;
+                    border-bottom: 1px solid #959fa352;
+                    font-size: 16px;
+                    font-weight: 600;
+                   }
+            }
+        }
+    }
+}
