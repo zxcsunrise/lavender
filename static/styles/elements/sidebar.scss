@@ -1,6 +1,8 @@
 .sidebar {
+    margin-top: 80px;
     position: fixed;
     display: flex;
+    z-index: -1;
     flex-direction: column;
     gap: 8px;
     top: 0px;
@@ -36,5 +38,15 @@
                 }
             }
         }
+    }
+    .pages {
+        .pages-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #959FA3;
+            text-transform: uppercase;
+            margin-left: 24px;
+        }
+
     }
 }

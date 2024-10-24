@@ -14,6 +14,7 @@ export function accordion() {
                     // Закрываем все открытые элементы перед открытием
                     document.querySelectorAll('.accordion-content').forEach(item => {
                         item.style.display = 'none';
+                        
                     });
     
                     content.style.display = 'flex';

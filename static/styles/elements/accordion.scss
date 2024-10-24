@@ -8,6 +8,13 @@
             &.active {
                 color: #191B1C;
             }
+            .arrow {
+                transition: transform 0.3s;
+                &.rotate {
+                    transform: rotate(180deg);
+                }
+            }
+            
         }
         .accordion-content {
             display: none;

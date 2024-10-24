@@ -143,6 +143,7 @@ table {
   padding-top: 64px;
   padding-bottom: 64px;
   background-color: #27272A;
+  z-index: 1000;
 }
 .footer .container {
   display: flex;
@@ -322,8 +323,10 @@ table {
 }
 
 .sidebar {
+  margin-top: 80px;
   position: fixed;
   display: flex;
+  z-index: -1;
   flex-direction: column;
   gap: 8px;
   top: 0px;
@@ -361,6 +364,13 @@ table {
   font-size: 14px;
   font-weight: 600;
 }
+.sidebar .pages .pages-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #959FA3;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
 
 .accordion-container .accordion-item .accordion-header {
   display: flex;
@@ -370,6 +380,12 @@ table {
 }
 .accordion-container .accordion-item .accordion-header.active {
   color: #191B1C;
+}
+.accordion-container .accordion-item .accordion-header .arrow {
+  transition: transform 0.3s;
+}
+.accordion-container .accordion-item .accordion-header .arrow.rotate {
+  transform: rotate(180deg);
 }
 .accordion-container .accordion-item .accordion-content {
   display: none;
@@ -704,6 +720,7 @@ table {
   margin-left: 290px;
   border-radius: 8px;
   margin-bottom: 24px;
+  margin-top: 80px;
 }
 .banner-section .bannder-block {
   display: flex;

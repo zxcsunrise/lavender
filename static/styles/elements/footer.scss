@@ -2,6 +2,7 @@
     padding-top: 64px;
     padding-bottom: 64px;
     background-color: $bg-secondary-dark;
+    z-index: 1000;
     .container {
         display: flex;
         justify-content: space-between;
