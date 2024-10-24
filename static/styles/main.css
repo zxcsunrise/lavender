@@ -324,12 +324,65 @@ table {
 .sidebar {
   position: fixed;
   display: flex;
-  top: 20px;
+  flex-direction: column;
+  gap: 8px;
+  top: 0px;
+  left: 0;
   max-width: 280px;
   height: 80%;
   width: 100%;
   background-color: #fff;
   box-shadow: -15px 15px 30px 20px rgba(0, 0, 0, 0.1);
+}
+.sidebar .manipulation {
+  padding: 24px;
+}
+.sidebar .manipulation .title {
+  padding-top: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #959FA3;
+}
+.sidebar .manipulation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sidebar .manipulation ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sidebar .manipulation ul li a {
+  text-decoration: none;
+  color: #626C70;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.accordion-container .accordion-item .accordion-header {
+  display: flex;
+  gap: 12px;
+  padding: 10px 24px;
+  color: #626C70;
+}
+.accordion-container .accordion-item .accordion-header.active {
+  color: #191B1C;
+}
+.accordion-container .accordion-item .accordion-content {
+  display: none;
+  margin-left: 56px;
+  flex-direction: column;
+  gap: 4px;
+  color: #626C70;
+}
+.accordion-container .accordion-item .accordion-content .title {
+  padding: 4px 0;
+}
+.accordion-container .accordion-item .accordion-content .title.active {
+  color: #4ADE80;
 }
 
 .hero-section {
@@ -648,7 +701,7 @@ table {
 }
 
 .banner-section {
-  margin-left: 316px;
+  margin-left: 290px;
   border-radius: 8px;
   margin-bottom: 24px;
 }
@@ -696,7 +749,7 @@ table {
 }
 
 .profile-main-section {
-  margin-left: 316px;
+  margin-left: 290px;
 }
 .profile-main-section .profile-main-block .container-profile {
   display: grid;
@@ -773,6 +826,33 @@ table {
   border-bottom: 1px solid rgba(149, 159, 163, 0.3215686275);
   font-size: 16px;
   font-weight: 600;
+}
+.profile-main-section .profile-main-block .container-profile .info .info-block {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.profile-main-section .profile-main-block .container-profile .info .info-block .item {
+  display: flex;
+  gap: 16px;
+}
+.profile-main-section .profile-main-block .container-profile .info .info-block .item .icon {
+  padding: 3px;
+}
+.profile-main-section .profile-main-block .container-profile .info .info-block .item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.profile-main-section .profile-main-block .container-profile .info .info-block .item .text .count {
+  font-weight: 600;
+  color: #959FA3;
+  font-size: 12px;
+}
+.profile-main-section .profile-main-block .container-profile .info .info-block .item .text .value {
+  font-size: 16px;
+  color: #191B1C;
 }
 
 /*# sourceMappingURL=main.css.map */

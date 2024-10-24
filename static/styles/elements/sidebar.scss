@@ -1,10 +1,40 @@
 .sidebar {
     position: fixed;
     display: flex;
-    top: 20px;
+    flex-direction: column;
+    gap: 8px;
+    top: 0px;
+    left: 0;
     max-width: 280px;
     height: 80%;
     width: 100%;
     background-color: #fff;
     box-shadow: -15px 15px 30px 20px rgba(0, 0, 0, 0.1);
+    .manipulation {
+        padding: 24px;
+        .title {
+            padding-top: 24px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #959FA3;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            li {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                a {
+                    text-decoration: none;
+                    color: #626C70;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }

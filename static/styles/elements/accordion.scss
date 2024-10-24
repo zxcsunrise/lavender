@@ -1,0 +1,30 @@
+.accordion-container {
+    .accordion-item {
+        .accordion-header {
+            display: flex;
+            gap: 12px;
+            padding: 10px 24px;
+            color: #626C70;
+            &.active {
+                color: #191B1C;
+            }
+        }
+        .accordion-content {
+            display: none;
+            margin-left: 56px;
+            flex-direction: column;
+            gap: 4px;
+            color: #626C70; 
+            .title {
+                padding: 4px 0;
+                &.active {
+                    color: #4ADE80;
+                }
+            }
+        }
+    }
+}
+
+
+
+
