@@ -130,6 +130,10 @@ table {
   right: 0;
   z-index: 1000;
 }
+.header.sticky.profile {
+  border-bottom: 1px #86EFAC solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .header__btn-block {
   display: flex;
   justify-content: end;
@@ -144,6 +148,7 @@ table {
   padding-bottom: 64px;
   background-color: #27272A;
   z-index: 1000;
+  position: relative;
 }
 .footer .container {
   display: flex;
@@ -326,7 +331,7 @@ table {
   margin-top: 80px;
   position: fixed;
   display: flex;
-  z-index: -1;
+  z-index: 0;
   flex-direction: column;
   gap: 8px;
   top: 0px;
@@ -832,6 +837,64 @@ table {
 .profile-main-section .profile-main-block .container-profile .last-activity {
   grid-column: span 3;
   grid-row: span 2;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .bio-title {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(149, 159, 163, 0.3215686275);
+  font-size: 16px;
+  font-weight: 600;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: grid;
+  gap: 18px;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .user {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  gap: 16px;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #DCFCE7;
+  border-radius: 8px;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .item-category {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .item-category span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .item-name {
+  font-size: 16;
+  font-weight: 600;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .author {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .author span {
+  font-size: 14px;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.profile-main-section .profile-main-block .container-profile .last-activity .last-item .item .date span {
+  font-size: 14px;
 }
 .profile-main-section .profile-main-block .container-profile .info {
   background-color: #fff;
