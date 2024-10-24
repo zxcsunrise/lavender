@@ -19,6 +19,10 @@ time, mark, audio, video {
 body {
   font-family: "Inter", sans-serif;
 }
+html {
+  scrollbar-color: $text-blue-light;
+  scroll-behavior: smooth;
+}
 ol, ul {
   list-style: none;
 }
